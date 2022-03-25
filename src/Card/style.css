@@ -9,6 +9,7 @@
   min-height: 200px;
   box-shadow: 0 0px 10px rgba(15, 1, 1, 0.575);
   justify-content: space-between;
+  gap: 10px;
 }
 .box-info {
   display: flex;
@@ -36,4 +37,17 @@ span {
   color: var(--color-light);
   text-transform: capitalize;
   letter-spacing: 0px;
+}
+.card-delete {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(218, 18, 18);
+  color: rgb(243, 184, 184);
+  font-family: var(--fml);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  border: 0;
 }

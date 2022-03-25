@@ -9,14 +9,17 @@ function App() {
     { name: "Maria", age: "19", city: "São Paulo" },
   ]);
 
-  console.log(pessoas);
+  function deleteCard(ind) {
+    let remove = pessoas.filter((pessoa, index) => index !== ind);
+    setPessoas(remove);
+  }
 
   return (
     <div className="App">
       <Header logo="Lista de Devs" pessoas={pessoas} setPessoas={setPessoas} />
       <div className="content container">
         {pessoas.map((card, index) => (
-          <Card card={card} key={index} />
+          <Card card={card} key={index} onClick={() => deleteCard(index)} />
         ))}
       </div>
     </div>

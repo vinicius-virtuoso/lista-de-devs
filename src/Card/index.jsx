@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Card = ({ card }) => {
+const Card = ({ card, onClick }) => {
   return (
     <div className="card">
       <div className="box-info">
@@ -21,6 +21,9 @@ const Card = ({ card }) => {
         </p>
         <button className="card-btn">Editar</button>
       </div>
+      <button className="card-delete" onClick={onClick}>
+        Excluir
+      </button>
     </div>
   );
 };
