@@ -1,0 +1,42 @@
+.addCard {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn-add {
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--color-primary);
+  padding: 8px 15px;
+  border-radius: 5px;
+
+  font-family: var(--fml);
+  font-size: 16px;
+  border: 0;
+
+  transition: all 0.3s ease;
+}
+.btn-add span {
+  transition: all 0.3s ease;
+  display: flex;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  align-items: center;
+  justify-content: center;
+}
+.btn-add:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
+}
+.btn-add:hover span {
+  background: var(--color-primary);
+  color: var(--color-light);
+}

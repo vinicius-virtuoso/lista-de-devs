@@ -1,0 +1,53 @@
+:root {
+  --color-primary: #1bc771;
+  --color-secondary: #212121;
+  --color-bg: #1a1a1a;
+  --color-light: #dfdfdf;
+
+  --fml: "Courier New", Courier, monospace;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+a,
+header,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: calc(100vh - 200px);
+  background: var(--color-secondary);
+  overflow-y: auto;
+  box-shadow: 0 0px 10px rgba(15, 1, 1, 0.192);
+  border-radius: 5px;
+  gap: 20px;
+  padding: 15px;
+}
